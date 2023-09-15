@@ -2,7 +2,7 @@ body {
   padding: 70px 50px 60px;
   font-family: "Raleway", sans-serif;
   color: white;
-  background: url("src/images/bg-curvy-desktop.svg") no-repeat center 750px,
+  background: url("../images/bg-curvy-desktop.svg") no-repeat center 750px,
     linear-gradient(
       to bottom,
       #1c2230 0%,
@@ -122,14 +122,14 @@ body {
   border-bottom: 1px solid white;
 }
 .terceira-secao .link::after {
-  content: url(src/images/icon-arrow.svg);
+  content: url(../images/icon-arrow.svg);
   margin-left: 5px;
   display: inline-block;
   transform: translateY(4px);
 }
 
 .terceira-secao .link:hover::after {
-  content: url(src/images/icon-arrow-white.svg);
+  content: url(../images/icon-arrow-white.svg);
 }
 
 /* Seção Comentários */
@@ -147,7 +147,7 @@ body {
   position: relative;
 }
 .secao-comentarios .tela-comentario:nth-child(1)::before {
-  content: url(src/images/bg-quotes.png);
+  content: url(../images/bg-quotes.png);
   position: absolute;
   top: -35px;
   left: -8px;
