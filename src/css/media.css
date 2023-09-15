@@ -1,0 +1,43 @@
+
+@media (max-width: 1017px) {
+  .terceira-secao {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .cabecalho .menu {
+    gap: 10px;
+  }
+  .cabecalho .logo {
+    width: 140px;
+  }
+  #formulario {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 475px) {
+  body {
+    padding: 40px 20px 50px;
+  }
+  .cabecalho .logo {
+    width: 80px;
+  }
+  .terceira-secao .sub-secao .titulo {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  .secao-comentarios .box-promo .titulo {
+    font-size: 20px;
+  }
+  #formulario {
+    flex-direction: column;
+    align-items: center;
+  }
+  #formulario #email {
+    width: 100%;
+  }
+  #formulario button[type="submit"] {
+    font-size: 12px;
+    max-width: 326px;
+  }
+}
