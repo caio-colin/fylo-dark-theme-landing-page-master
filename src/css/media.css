@@ -3,7 +3,14 @@
   .terceira-secao {
     flex-wrap: wrap;
   }
+  .footer .footer-elementos{
+    gap: 20px;
+  }
+  .footer .footer-elementos .social{
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 768px) {
   .cabecalho .menu {
     gap: 10px;
@@ -14,10 +21,31 @@
   #formulario {
     flex-wrap: wrap;
   }
+  .footer .footer-elementos{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer .footer-elementos .social{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
+@media (max-width: 718px) {
+  .footer .footer-elementos{
+    flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  #formulario button[type="submit"]{
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 475px) {
-  body {
-    padding: 40px 20px 50px;
+  body{
+    background: url(../images/bg-curvy-mobile.svg) no-repeat center 600px, linear-gradient(to bottom,#1c2230 0px,#1c2230 700px,#181e2a 700px,#181e2a 100%);
+    background-size: 100% auto;
   }
   .cabecalho .logo {
     width: 80px;

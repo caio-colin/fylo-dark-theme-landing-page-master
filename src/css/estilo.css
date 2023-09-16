@@ -1,19 +1,16 @@
 body {
-  padding: 70px 50px 60px;
+  padding-top: 70px;/*padding: 70px 45px 0;*/
   font-family: "Raleway", sans-serif;
   color: white;
-  background: url("../images/bg-curvy-desktop.svg") no-repeat center 750px,
-    linear-gradient(
-      to bottom,
-      #1c2230 0%,
-      #1c2230 30%,
-      #181e2a 30%,
-      #181e2a 86%,
-      #0c1524 86%,
-      #0c1524 100%
-    );
+  background: url(../images/bg-curvy-desktop.svg) no-repeat center 800px, linear-gradient(to bottom,#1c2230 0px,#1c2230 1120px,#181e2a 1120px,#181e2a 100%)
+}
+.cabecalho ,.secao-principal ,.segunda-secao.bgcolor ,.terceira-secao, .secao-comentarios, .secao-box-promo {
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .cabecalho {
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,7 +27,11 @@ body {
   text-decoration: underline;
 }
 .secao-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin-bottom: 130px;
 }
 .secao-principal .illustration {
   width: 100%;
@@ -64,7 +65,7 @@ body {
 
 .segunda-secao {
   text-align: center;
-  margin: 130px 0 150px;
+  padding-bottom: 150px;
 }
 .segunda-secao .sub-secao {
   display: flex;
@@ -79,6 +80,10 @@ body {
 .segunda-secao .item {
   max-width: 400px;
 }
+.segunda-secao .item img { 
+  margin-bottom: 20px;
+}
+
 .segunda-secao .item .descricao {
   margin-top: 20px;
   line-height: 26px;
@@ -89,7 +94,7 @@ body {
   display: flex;
   gap: 50px;
   justify-content: center;
-  margin-bottom: 180px;
+  padding-bottom: 180px;
 }
 
 .terceira-secao .illustration-stay {
@@ -144,6 +149,8 @@ body {
   border-radius: 5px;
   padding: 40px 30px 25px;
   position: relative;
+  align-self: center;
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.867);
 }
 .secao-comentarios .tela-comentario:nth-child(1)::before {
   content: url(../images/bg-quotes.png);
@@ -176,10 +183,14 @@ body {
   font-size: 12px;
   color: #858c96;
 }
-.secao-comentarios .box-promo {
+.secao-box-promo{
+  padding-top: 40px;
+}
+.box-promo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   max-width: 900px;
   width: 100%;
   border-radius: 5px;
@@ -187,13 +198,14 @@ body {
   background-color: #1c2230;
   text-align: center;
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.867);
-  margin: 150px 0 80px;
+  transform: translateY(150px);
+  
 }
-.secao-comentarios .box-promo .titulo {
+.box-promo .titulo {
   font-size: 25px;
   margin-bottom: 20px;
 }
-.secao-comentarios .box-promo .descricao {
+.box-promo .descricao {
   line-height: 26px;
   margin-bottom: 30px;
   max-width: 750px;
@@ -231,31 +243,41 @@ body {
 }
 
 .footer {
-  max-width: 1320px;
+  width: 100%;
+  background-color: #0c1524;
   margin: auto;
+  padding: 220px 45px 60px;
+  
 }
 .footer .logo {
-  margin: 0 0 40px 25px;
+  margin: auto;
+  max-width: 1320px;
+}
+.footer .logo img[alt="logo"] {
+  width: 110px;
+  margin-bottom: 50px;
 }
 .footer .footer-elementos {
+  margin: auto;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
-
 .footer-elementos .endereco {
   display: flex;
   max-width: 390px;
+  
 }
 .footer-elementos .endereco img {
   align-self: flex-start;
-  margin: 5px 25px;
+  margin: 5px 25px 5px 0;
 }
 .footer-elementos .contato div {
   display: flex;
   margin-bottom: 8px;
 }
 .footer-elementos .contato div img {
-  margin: 5px 25px;
+  margin: 5px 25px 5px 0;
 }
 .footer-elementos .contato div span {
   margin-top: 3px;
@@ -263,10 +285,14 @@ body {
 .footer-elementos .nav-footer:nth-child(3) {
   max-width: 75px;
   width: 100%;
+  flex-grow: 1;
+
 }
 .footer-elementos .nav-footer:nth-child(4) {
   max-width: 85px;
   width: 100%;
+  flex-grow: 1;
+
 }
 .footer-elementos .nav-footer ul li {
   margin-bottom: 15px;
